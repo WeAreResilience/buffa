@@ -1,0 +1,4 @@
+kind: Changed
+body: |-
+    **`PoolError::MessageSetWithFields` now displays "MessageSet {message} declares a field; a MessageSet can have extensions only"** (#709). The previous text, "declares fields instead of extensions", read as if the message had no extensions even when it also declared extension ranges.
+time: 2026-10-13T18:40:00.000000000+00:00
