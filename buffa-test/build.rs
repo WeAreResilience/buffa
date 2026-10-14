@@ -1460,7 +1460,8 @@ fn main() {
         .compile()
         .expect("buffa_build failed for ext_options.proto");
 
-    // Edition 2024 — requires protoc v32+ (the first release that accepts it without --experimental_editions).
+    // Edition 2024 — requires protoc v32+ (the first release that accepts it
+    // without --experimental_editions).
     // Older protoc rejects it with "later than the maximum supported edition".
     // Skip gracefully on older protoc so the crate still builds; tests are
     // cfg-gated on has_edition_2024.
